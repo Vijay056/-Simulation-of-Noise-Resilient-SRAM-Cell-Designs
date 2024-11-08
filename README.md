@@ -87,55 +87,7 @@ $  ngspice 6T_sram_cell.spice
 
 ![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Simulation_Waveform/Prelayout/6T_sram_cell.png)
 
-## 2. Precharge circuit
 
-**Circuit Diagram :**
-
-![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Schematics/Prechargecell.png)
-
-
-**Simulation Waveform :**
-<dl>
-  <dd> Type below command in Prelayout directory </dd>
-</dl>
-
-```
-$  ngspice Prechargecell.spice 
-```
-
-![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Simulation_Waveform/Prelayout/Prechargecell.png)
-
-## 3. Differential Sense Amplifier
-
-**Circuit Diagram :**
-
-![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Schematics/Differential_sense_amplifier.png)
-
-**Simulation Waveform :**
-<dl>
-  <dd> Type below command in Prelayout directory </dd>
-</dl>
-
-```
-$  ngspice Differential_sense_amplifier.spice 
-```
-
-![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Simulation_Waveform/Prelayout/Differential_sense_amplifier.png)
-
- 
- 
-## 7. 1bit_sram_read 
-
-**Simulation Waveform :**
-<dl>
-  <dd> Type below command in Prelayout directory </dd>
-</dl>
- 
-```
-$  ngspice 1bit_sram_read.spice
-```
-
-![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Simulation_Waveform/Prelayout/1bit_sram_read.png)
 
 ## 8. 1bit_sram_write 
 **Simulation Waveform :**
