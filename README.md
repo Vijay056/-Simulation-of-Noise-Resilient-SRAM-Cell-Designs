@@ -75,7 +75,7 @@ The NMOS transistors (M2, M4) and PMOS transistors(M1,M3) are driver and pull up
 
 **SRAM test schematic :**
 <dl>
-  <dd>Test schematic of 6t-SRAM is shown in the below figure </dd>
+  <dd>The write operation test schematic for a 6T SRAM cell is essential in evaluating the cell’s ability to perform accurate and reliable data storage. The write operation is a fundamental SRAM process, wherein the stored data value within the memory cell is altered by selectively applying voltages to the bit lines (BL and BLB) and activating the word line (WL). In the 6T SRAM cell, two cross-coupled inverters are responsible for maintaining data stability, while additional access transistors are controlled by the WL to allow interaction with the bit lines during writing. Designing a test schematic specifically for this operation enables engineers to verify the cell’s functionality under simulated conditions, ensuring that it writes data accurately and meets performance requirements.</dd>
 </dl>
 
 ```
