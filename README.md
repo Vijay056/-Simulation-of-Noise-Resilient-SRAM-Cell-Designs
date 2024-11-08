@@ -74,7 +74,7 @@ The NMOS transistors (M2, M4) and PMOS transistors(M1,M3) are driver and pull up
 
 **Circuit Diagram :**
 
-![]([https://github.com/Deepak42074/vsdsram_sky130/blob/main/Schematics/6T_sram_cell.png](https://github.com/Vijay056/-Simulation-of-Noise-Resilient-SRAM-Cell-Designs/blob/main/Screenshot%20from%202024-11-08%2023-43-31.png))
+![](https://github.com/Vijay056/-Simulation-of-Noise-Resilient-SRAM-Cell-Designs/blob/main/Screenshot%20from%202024-11-08%2023-43-31.png)
 
 **Simulation Waveform :**
 <dl>
