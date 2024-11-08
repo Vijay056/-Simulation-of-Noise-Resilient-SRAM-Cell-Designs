@@ -1,4 +1,4 @@
-# vsdsram_sky130
+# sram_sky130
 This project focuses Simulation of Noise Resilient SRAM cell design with operating voltage of 1.8v 
 and access time of less than 2.5ns using opensource Google-skywater(sky130) pdk technology and compiled using 
 opensource compiler openRAM.The circuits(custom cells) which are required as input to openRAM 
@@ -35,7 +35,7 @@ Please follow below instructions :(For Ubuntu users)
 ```
 $  sudo apt install git
 $  git clone https://github.com/Deepak42074/vsdsram_sky130.git
-$  cd vsdsram_sky130
+$  cd sram_sky130
 $  chmod +777 install_and_clone.sh
 $  ./install_and_clone.sh
 
@@ -63,10 +63,6 @@ Below images the show the inputs required to openRAM compiler:
 
 Custom cells required:
 * SRAM bit cell
-* Write Driver
-* Sense Ampilfier
-* Tristate Buffer
-* D-flip flop
 
 # Prelayout Schematic and Simulation waveforms
 The Schematics are drawn using opensource xschem tool and simulation is performed using Ngspice,both are configured with sky130 library.
@@ -127,27 +123,7 @@ $  ngspice Differential_sense_amplifier.spice
 ![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Simulation_Waveform/Prelayout/Differential_sense_amplifier.png)
 
  
-## 5. Tristate Buffer
-
-**Circuit Diagram :**
-
-![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Schematics/Tristate_buffer.png)
-
-**Simulation Waveform :**
-<dl>
-  <dd> Type below command in Prelayout directory </dd>
-</dl>
-
-```
-$  ngspice Tristate_buffer.spice 
-```
-
-![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Simulation_Waveform/Prelayout/Tristate_buffer.png)
-
  
-
-![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Simulation_Waveform/Prelayout/Dff.png)
-
 ## 7. 1bit_sram_read 
 
 **Simulation Waveform :**
