@@ -34,7 +34,7 @@ Please follow below instructions :(For Ubuntu users)
 
 ```
 $  sudo apt install git
-$  git clone https://github.com/Deepak42074/vsdsram_sky130.git
+$  git clone https://github.com/vijay/sram_sky130.git
 $  cd sram_sky130
 $  chmod +777 install_and_clone.sh
 $  ./install_and_clone.sh
@@ -47,7 +47,7 @@ Note: Running script install_and_clone.sh will install ngspice tool and clone to
 </dl>
 
 ```
-$    cd vsdsram_sky130/Ngspice_Netlist/Prelayout/ 
+$    cd sram_sky130/Ngspice_Netlist/Prelayout/ 
 $    ngspice inv.spice 
 ```
 
