@@ -1,0 +1,59 @@
+v {xschem version=3.4.6RC file_version=1.2
+}
+G {}
+K {}
+V {}
+S {}
+E {}
+N -140 -30 -140 60 {lab=vin}
+N -100 -0 -100 30 {lab=out}
+N -10 40 -10 90 {lab=GND}
+N -100 90 -10 90 {lab=GND}
+N -170 20 -140 20 {lab=vin}
+N -10 -60 -10 -20 {lab=#net1}
+N -100 -60 -10 -60 {lab=#net1}
+N -50 60 20 60 {lab=out}
+N -50 20 -50 60 {lab=out}
+N -100 20 -50 20 {lab=out}
+N -170 20 -170 70 {lab=vin}
+N -100 -30 -10 -30 {lab=#net1}
+N -100 60 -60 60 {lab=GND}
+N -60 60 -60 90 {lab=GND}
+C {vsource.sym} -10 10 0 0 {name=V1 value=1.8V savecurrent=false}
+C {gnd.sym} -60 90 0 0 {name=l1 lab=GND}
+C {opin.sym} 20 60 0 0 {name=p2 lab=out}
+C {/home/vijay/xschem/xschem_sky130/sky130_fd_pr/nfet_01v8.sym} -120 60 0 0 {name=M1
+W=1
+L=0.15
+nf=1 
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {/home/vijay/xschem/xschem_sky130/sky130_fd_pr/pfet_01v8.sym} -120 -30 0 0 {name=M3
+W=1
+L=0.15
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {code.sym} -310 50 0 0 {name=s1 only_toplevel=false value="
+.tran 100p 10n
+.save all
+"}
+C {vsource.sym} -170 100 0 0 {name=V2 value="PULSE(0 1 0.5n 100p 100p 1n 2n)" savecurrent=false}
+C {gnd.sym} -170 130 0 0 {name=l2 lab=GND}
+C {lab_pin.sym} -170 30 0 0 {name=p1 sig_type=std_logic lab=vin}

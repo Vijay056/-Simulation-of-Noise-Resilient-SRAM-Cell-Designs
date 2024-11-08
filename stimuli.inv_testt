@@ -1,0 +1,6 @@
+.tran 0.1n 2u
+.control
+run 
+plot out in 
+.endc
+.end
