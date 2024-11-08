@@ -76,6 +76,17 @@ The NMOS transistors (M2, M4) and PMOS transistors(M1,M3) are driver and pull up
 
 ![](https://github.com/Vijay056/-Simulation-of-Noise-Resilient-SRAM-Cell-Designs/blob/main/Screenshot%20from%202024-11-08%2023-43-31.png)
 
+**SRAM test schematic :**
+<dl>
+  <dd> Type below command in Prelayout directory </dd>
+</dl>
+
+```
+$  ngspice untitled1.sch 
+```
+
+![](https://github.com/Vijay056/-Simulation-of-Noise-Resilient-SRAM-Cell-Designs/blob/main/Screenshot%20from%202024-11-08%2023-43-51.png)
+
 **Simulation Waveform :**
 <dl>
   <dd> Type below command in Prelayout directory </dd>
