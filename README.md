@@ -95,22 +95,6 @@ $  ngspice 6T_sram_cell.spice
 
 ![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Simulation_Waveform/Prelayout/6T_sram_cell.png)
 
-
-
-## 8. 1bit_sram_write 
-**Simulation Waveform :**
-<dl>
-  <dd> Type below command in Prelayout directory </dd>
-</dl>
- 
-```
-$  ngspice 1bit_write_read.spice
-```
-
-![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Simulation_Waveform/Prelayout/1bit_sram_write.png)
-
-
-
 SPICE Configuration for 1-Bit 6T SRAM Write Operation with VPULSE sources
 
 * Define Vdd supply voltage
