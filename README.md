@@ -86,7 +86,7 @@ $  ngspice untitled1.sch
 
 **Simulation Waveform :**
 <dl>
-  <dd> Type below command in Prelayout directory </dd>
+  <dd>The waveform analysis in the SRAM write operation test schematic is critical for understanding the behavior of each control signal and how it impacts the storage of data within the 6T SRAM cell. A typical write operation waveform includes pulses for the bit lines (BL and BLB) and the word line (WL), which together determine the successful writing of data. Observing these waveforms allows engineers to verify that each signal reaches its expected voltage levels and adheres to the timing requirements necessary to perform a stable write. For instance, a logic 1 write is achieved by setting BL high (e.g., 1.8V) and BLB low (0V), while a logic 0 write inverts these voltages. The waveform patterns generated during these operations help assess whether the bit lines and WL synchronize effectively. </dd>
 </dl>
 
 ```
