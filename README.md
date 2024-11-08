@@ -90,10 +90,10 @@ $  ngspice untitled1.sch
 </dl>
 
 ```
-$  ngspice 6T_sram_cell.spice 
+$  ngspice sram.spice 
 ```
 
-![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Simulation_Waveform/Prelayout/6T_sram_cell.png)
+![](https://github.com/Vijay056/-Simulation-of-Noise-Resilient-SRAM-Cell-Designs/blob/main/WhatsApp%20Image%202024-11-08%20at%2011.59.13%20PM.jpeg)
 
 SPICE Configuration for 1-Bit 6T SRAM Write Operation with VPULSE sources
 
