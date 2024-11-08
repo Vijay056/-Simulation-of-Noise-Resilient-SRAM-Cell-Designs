@@ -1,5 +1,5 @@
 # vsdsram_sky130
-This project focuses on design of 1024x32(4KB) SRAM memory with operating voltage of 1.8v 
+This project focuses Simulation of Noise Resilient SRAM cell design with operating voltage of 1.8v 
 and access time of less than 2.5ns using opensource Google-skywater(sky130) pdk technology and compiled using 
 opensource compiler openRAM.The circuits(custom cells) which are required as input to openRAM 
 are designed and simluated using opensource tools.
@@ -23,10 +23,6 @@ are designed and simluated using opensource tools.
 
 2. xschem : An opensource source tool for drawing schematics.It allows hierarchical representation of circuits.For installation and configurin with sky130 follow :
 https://github.com/bluecmd/learn-sky130/blob/main/schematic/xschem/getting-started.md#installation-of-sky130-primitives-and-symbols .
-
-3. Magic: Magic is an opensource VLSI circuit layout design tool.For more information follow: http://opencircuitdesign.com/magic/ .
-
-NOTE: Any other schematic drawing tool can be used in place of xschem. Here installation of xschem is not required for running this project on your machine.
 
 # Installing and Cloning Instructions
 
@@ -63,7 +59,7 @@ $    ngspice inv.spice
 ## Inputs to OpenRAM compiler
 Below images the show the inputs required to openRAM compiler:
 
-![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Others/Openram_Compiler.png)
+![]([https://github.com/Deepak42074/vsdsram_sky130/blob/main/Others/Openram_Compiler.png](https://www.mdpi.com/micromachines/micromachines-14-00581/article_deploy/html/images/micromachines-14-00581-g003-550.jpg))
 
 Custom cells required:
 * SRAM bit cell
@@ -375,41 +371,9 @@ $  ngspice writedriver.spice
 
 ![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Simulation_Waveform/Postlayout/writedriver.png)
 
-## 4. Tristate Buffer
 
-**Layout :**
 
-![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Layouts/Tristate_buffer.png)
-
-**Simulation Waveform :**
-<dl>
-  <dd> Type below command in Postlayout directory </dd>
-</dl>
-
-```
-$  ngspice Tristate_buffer.spice 
-```
-
-![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Simulation_Waveform/Postlayout/Tristate_buffer.png)
-
-## 5. Positive Edge Triggered D flip flop
-
-**Layout :**
-
-![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Layouts/Dff.png)
-
-**Simulation Waveform :**
-<dl>
-  <dd> Type below command in Postlayout directory </dd>
-</dl>
- 
-```
-$  ngspice Dff.spice
-```
-
-![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Simulation_Waveform/Postlayout/Dff.png)
-
-## 6. 1bit_sram:
+## 4. 1bit_sram:
 This consists of 1 bit SRAM integrated with precharge circuit ,sense amplifier and write driver circuitary to perform read and write operation.
 
 ![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Layouts/1bit_sram.png)
@@ -440,24 +404,19 @@ $  ngspice 1bit_sram_write.spice
 ![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Simulation_Waveform/Postlayout/1bit_sram_write.png)
 
 # Future Work
-* Optimization of layout design of custom cells for better cell fitting and compiling custom cells with openRAM. 
+* Design of memory array
 
 # Author
-* Deepak verma
+* Vijay
 
 # Acknowledgements  
 * Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.
-* Philipp Gühring, Software Architect, LibreSilicon Assocation
 * Yash Kumar, VSD Teaching Assistant  - laryash99@gmail.com
 * Reuel Reuben, VSD Teaching Assistant  -reuel992000@gmail.com
 * Nickson Jose,, VSD Teaching Assistant
 
 # Contact Information  
-* Deepak verma ,B.Tech(Electronics and Communication),IIIT Sonepat -deepak074.verma@gmail.com
 * Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. - kunalghosh@gmail.com
-* Philipp Gühring, Software Architect, LibreSilicon Assocation - pg@futureware.at
-
-
 
 
 
