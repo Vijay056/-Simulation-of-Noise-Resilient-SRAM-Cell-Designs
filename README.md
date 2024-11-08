@@ -54,7 +54,7 @@ $    ngspice inv.spice
 
 ## SRAM Memory Architecture
 
-![](https://github.com/Deepak42074/vsdsram_sky130/blob/main/Others/SRAM_memory_architecture.png)
+![](https://github.com/Vijay056/-Simulation-of-Noise-Resilient-SRAM-Cell-Designs/blob/main/micromachines-14-00581-g003.webp)
 
 ## Inputs to OpenRAM compiler
 Below images the show the inputs required to openRAM compiler:
