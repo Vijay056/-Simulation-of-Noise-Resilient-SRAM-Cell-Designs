@@ -103,26 +103,33 @@ $  ngspice 1bit_write_read.spice
 
 
 
-The four parameters A,B,C,D on above plot of Ncurve  define the stability of 6T-SRAM cell.
+SPICE Configuration for 1-Bit 6T SRAM Write Operation with VPULSE sources
 
-1. Static Voltage Noise Margin(SVNM) : It is the maximum DC voltage at the node Q before its state flips.It is the volatge difference between point A and C.
+* Define Vdd supply voltage
+Vdd vdd 0 1.8V
 
-    SVNM = V(C) - V(A) = 0.84 - 0.18 = 0.66V
-    
-2. Static Current Noise Margin (SINM) : It is the peak current between first two crossing and it is the maximum tolerable DC current that can be injected into the SRAM cell     before it flips.
+* VPULSE Block for SRAM Write Operation
+* This setup writes a logic "1" to the SRAM cell by default (BL = 1.8V, BLB = 0V)
+* Modify V1 and V2 for BL and BLB to change the write data
 
-    SINM = I(B) = ~299 uA
-    
-3. Write Trip Voltage(WTV) : It is the voltage required before changing the contents of the internal node.It is the voltage difference between netween point C and E.
-   
-   WTV = V(E) - V(C) = 1.8 - 0.84 = 0.97
-   
-4. Write Trip Current(WTI) : It is the negative current which is needed to write the cell.
-   
-   WTI = I(D) = ~(-48 uA)
-   
-In Ncurve point A and E are stable points and point C is metastable point.
+* Word Line (WL) Pulse - Controls the write access
+VWL WL 0 PULSE(0 1.8 5n 1n 1n 10n 20n)  ; Activates the cell for writing
 
+* Bit Line (BL) Pulse - Data signal for logic "1" (set to 1.8V)
+VBL BL 0 PULSE(0 1.8 5n 1n 1n 10n 20n)   ; Set V2 to 1.8V for writing "1"
+
+* Bit Line Bar (BLB) Pulse - Complementary data signal for logic "1" (set to 0V)
+VBLB BLB 0 PULSE(1.8 0 5n 1n 1n 10n 20n) ; Set V2 to 0V for writing "1"
+
+* To write a logic "0", adjust BL and BLB as follows:
+* VBL BL 0 PULSE(1.8 0 5n 1n 1n 10n 20n)   ; Set V2 to 0V for BL
+* VBLB BLB 0 PULSE(0 1.8 5n 1n 1n 10n 20n) ; Set V2 to 1.8V for BLB
+
+* Simulation settings
+.tran 0.01n 20n    ; Time step and total simulation time
+.save all          ; Save all variables for analysis
+
+.end
 # Future Work
 * Design of memory array
 
