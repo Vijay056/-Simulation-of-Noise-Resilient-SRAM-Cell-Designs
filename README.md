@@ -51,6 +51,7 @@ $    ngspice sram.spice
 
 
 ## 6T SRAM DESIGN
+A 6T SRAM (Static Random-Access Memory) cell is one of the most widely used memory cell designs, particularly in cache memory for processors, due to its balance of speed, stability, and low power consumption. "6T" stands for six transistors, which is the minimum number needed to form a stable SRAM bit cell. The 6T SRAM cell consists of two cross-coupled inverters that form a bistable flip-flop, capable of holding either a 0 or 1 state, and two additional access transistors that control access to the cell during read and write operations. This configuration provides a non-volatile structure that retains its data as long as power is supplied.
 
 ![](https://github.com/Vijay056/-Simulation-of-Noise-Resilient-SRAM-Cell-Designs/blob/main/The-schematic-diagram-of-conventional-6T-SRAM-Cell.png)
 
