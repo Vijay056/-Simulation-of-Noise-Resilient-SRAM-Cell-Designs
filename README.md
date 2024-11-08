@@ -50,9 +50,9 @@ $    ngspice sram.spice
 ```
 
 
-## SRAM Memory Architecture
+## 6T SRAM DESIGN
 
-![](https://github.com/Vijay056/-Simulation-of-Noise-Resilient-SRAM-Cell-Designs/blob/main/micromachines-14-00581-g003.webp)
+![](https://github.com/Vijay056/-Simulation-of-Noise-Resilient-SRAM-Cell-Designs/blob/main/The-schematic-diagram-of-conventional-6T-SRAM-Cell.png)
 
 ## Inputs to OpenRAM compiler
 
