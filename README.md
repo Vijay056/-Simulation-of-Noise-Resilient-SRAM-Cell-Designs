@@ -9,9 +9,7 @@ are designed and simluated using opensource tools.
 - [Installing and Cloning Instructions](#Installing-and-Cloning-Instructions)  
 - [SRAM Memory Architecture](##SRAM-Memory-Architecture)
 - [Inputs to OpenRAM compiler](##Inputs-to-OpenRAM-compiler)
-- [Prelayout Schematic and Simulation waveforms](#Prelayout-Schematic-and-Simulation-waveforms)
-- [Stability Analysis of 6T-SRAM cell](##Stability-Analysis-of-6T-SRAM-cell)
-- [Layouts and Postlayout Simulation waveforms](#Layouts-and-Postlayout-Simulation-waveforms)
+- [Analysis of 6T-SRAM cell](##Analysis-of-6T-SRAM-cell)
 - [Future Work](#future-work) 
 - [Author](#Author)
 - [Acknowledgements](#Acknowledgements)  
@@ -57,12 +55,11 @@ $    ngspice sram.spice
 ![](https://github.com/Vijay056/-Simulation-of-Noise-Resilient-SRAM-Cell-Designs/blob/main/micromachines-14-00581-g003.webp)
 
 ## Inputs to OpenRAM compiler
-Below images the show the inputs required to openRAM compiler:
 
-![](Screenshot from 2024-11-08 23-43-31.png)
 
 Custom cells required:
 * SRAM bit cell
+* SRAM test Schematic
 
 # Prelayout Schematic and Simulation waveforms
 The Schematics are drawn using opensource xschem tool and simulation is performed using Ngspice,both are configured with sky130 library.
