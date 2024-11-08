@@ -75,7 +75,7 @@ The NMOS transistors (M2, M4) and PMOS transistors(M1,M3) are driver and pull up
 
 **SRAM test schematic :**
 <dl>
-  <dd> Type below command in Prelayout directory </dd>
+  <dd>Test schematic of 6t-SRAM is shown in the below figure </dd>
 </dl>
 
 ```
