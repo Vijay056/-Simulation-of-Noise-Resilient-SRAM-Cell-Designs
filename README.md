@@ -59,7 +59,7 @@ $    ngspice inv.spice
 ## Inputs to OpenRAM compiler
 Below images the show the inputs required to openRAM compiler:
 
-![]([https://github.com/Deepak42074/vsdsram_sky130/blob/main/Others/Openram_Compiler.png](https://www.mdpi.com/micromachines/micromachines-14-00581/article_deploy/html/images/micromachines-14-00581-g003-550.jpg))
+![](Screenshot from 2024-11-08 23-43-31.png)
 
 Custom cells required:
 * SRAM bit cell
