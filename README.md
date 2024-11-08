@@ -32,7 +32,7 @@ Please follow below instructions :(For Ubuntu users)
 
 ```
 $  sudo apt install git
-$  git clone https://github.com/vijay/sram_sky130.git
+$  git clone https://github.com/Vijay056/-Simulation-of-Noise-Resilient-SRAM-Cell-Designs.git
 $  cd sram_sky130
 $  chmod +777 install_and_clone.sh
 $  ./install_and_clone.sh
